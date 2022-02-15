@@ -1,0 +1,209 @@
+/*Roots*/
+:root{
+    --dark_grey: #1d1d1d;
+    --white: #ffffff;
+    --trans_white: rgba(255,255,255, 0.6);
+    --neon: #05fdd8;
+    --scarlet: #fd2155;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark_grey);
+    color: var(--white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: var(--trans_white);
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2.5em;
+}
+/* Navigation Bar*/
+
+.navbar{
+    margin: 0 5em;
+}
+
+.main_page{
+    font-weight: bold;
+}
+
+.main_logo{
+    max-width: 8%;
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+}
+
+nav{
+    float: right;
+    margin-right: 10px;
+}
+
+.nav_links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav_links li{
+    display: inline-block;
+    margin-left: 15px;
+    padding-top: 35px;
+}
+
+.nav_links a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+
+.nav_links a:hover,
+.nav_links a:focus{
+    color: var(--dark_grey);
+    background-color: var(--neon);
+    transition: all 1s ease 0s;
+    border-radius: 5px;
+}
+
+/*Homepage design*/
+
+.homepage{
+    padding-top: 10em;
+    text-align: center;
+}
+
+.my_photo{
+    max-width: 40%;
+    opacity: 0.9;
+    margin: 0 auto;
+}
+
+.introduction_text h1{
+    font-size: 4rem;
+    margin: 0.1em;
+}
+
+.introduction_text p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*About Page Design*/
+
+.aboutpage{
+    padding: 7em;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.facebook_link{
+    text-decoration: none;
+    color: var(--neon);
+    padding-bottom: 0.25rem;
+    line-height: 5em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.facebook_link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--neon);
+    transition: width 0.5s ease-out;
+}
+
+.facebook_link:hover::before,
+.facebook_link:focus::before{
+    width: 100%;
+}
+
+/*Hobbies Design*/
+.hobbies{
+    padding: 0 10em 0 10em;
+    margin-top: 8em;
+    text-align: center;
+}
+
+.hobby_list{
+    display: flex;
+    text-align: left;
+    padding-top: 5em;
+    padding-bottom: 10rem;
+}
+
+.hobbyImg_right{
+    max-width: 50%;
+    max-height: 50%;
+    padding-left: 5em;
+}
+
+.hobbyImg_left{
+    max-width: 50%;
+    max-height: 50%;
+    padding-right: 5em;
+}
+
+/*Contact Page*/
+.contact_page{
+    padding: 0em;
+    margin-top: 0em;
+    text-align: center;
+}
+
+.reminder{
+    color: red;
+    font-size: small;
+}
+
+button{
+    color: var(--neon);
+    background-color: var(--dark_grey);
+    border-style: none;
+    border: 1px solid var(--neon);
+    padding: 1em 3em;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus{
+    background-color: var(--neon);
+    color: var(--dark_grey);
+    transition: all 1s ease 0s;
+
+}
+
+@media all and (max-width: 1000px){
+    body{
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 50%;
+    }
+    .my_photo,.hobbyImg_right,
+    .hobbyImg_left{
+        width: 50%;
+        height: 50%;
+    }
+    .my_photo{
+        margin-top: 5em;
+    }
+
+
+}

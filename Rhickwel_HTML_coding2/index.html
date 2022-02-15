@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Rhickwel Valdez">
+        <meta name="description" content="My personal website">
+        <meta name="keywords" content="personal, Rhickwel Valdez">
+
+        <title>RV | Personal Website</title>
+        <link rel="shortcut icon" href="Img/Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!--Navigation Bar-->
+
+        <div class="navbar">
+            <a href="index.html"><img class="main_logo" src="Img/Logo.png" alt="Logo"></a>
+
+            <nav>
+                <ul class="nav_links">
+                    <li class="main_page"><a href="index.html">Home</a></li>
+                    <li><a href="#go_aboutpage">About Me</a></li>
+                    <li><a href="#go_hobbies">My Hobbies</a></li>
+                    <li><a href="#go_contact">Contacts</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!--First Page/Home Page-->
+
+        <div class="homepage">
+            <img class="my_photo" src="Img/Rhickwel Photo.png" alt="Rhickwel's Photo">
+
+            <div class="introduction_text">
+                <h1>Hi, I'm Rhickwel Valdez</h1>
+                <p>- Front End Developer -</p>
+            </div>
+        </div>
+
+        <!--Second Page/About Page-->
+
+        <div class="aboutpage" id="go_aboutpage">
+            <h2 >About Me</h2>
+            <p>Greetings, I'm Rhickwel Valdez (You can call me Kel for short). I'm a Grade 12 student in Lorma
+                Highschool, San Juan La Union with a strand of ICT. Staying in San Fernando City La Union here in 
+                the Philippines. Despite of me being a shy person, I'm actually a kind and friendly boy.</p>
+            <a class="facebook_link" href="https://www.facebook.com/Rhickwel" target="_blank">Facebook Link</a>
+        </div>
+
+        <!--Third Page/Hobbies-->
+
+        <div class="hobbies" id="go_hobbies">
+            <h2>My Hobbies</h2>
+            <div class="hobby_list">
+                <div class="txt_container">
+                    <h3>Reading</h3>
+                    <p>One of my favorite hobby is reading. I love books that contains a good story.
+                        This means i mostly prefer reading Fiction books and Comics but sometimes i also read 
+                        Non-fiction books in order to learn, grow and feed my curiosities.</p>
+                </div>
+                <img class="hobbyImg_right" src="Img/hobby1.jpg" alt="Reading">
+            </div>
+            <div class="hobby_list">
+                    <img class="hobbyImg_left" src="Img/hobby2.jpg" alt="Going To The Gym">
+                <div class="txt_container">
+                    <h3>Going To The Gym</h3>
+                    <p>Going to the gym is also one of my favorite hobby to do. I started going to the gym out of boredom
+                        during the pandemic but later then became addicted in doing fitness.</p>
+                </div>
+            </div>
+            <div class="hobby_list">
+                <div class="txt_container">
+                    <h3>Watching TV shows</h3>
+                    <p>When i'm bored and have nothing else to do i watch some TV shows such as Anime, Kdrama, and Reality Shows. </p>
+                </div>
+                <img class="hobbyImg_right" src="Img/hobby3.jpg" alt="Watching TV Shows">
+            </div>
+        </div>
+
+        <!--Fourth Page/Contacts-->
+
+        <div class="contact_page" id="go_contact">
+            <h2>Contact Me:</h2>
+            <p>E-mail: rhickwel15@gmail.com</p>
+            <p class="reminder">Contact page is currently not working kindly contact me via E-mail or Facebook* </p>
+
+            
+            <form action="#">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name Here:">
+                </br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Input E-mail Here">
+
+                </br>
+                <p>Feedback:</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Insert Feedback Here:"></textarea>
+                 </br>
+                </br>
+                <button type="submit">Submit</button>
+            </form>
+            <a class="facebook_link" href="https://www.facebook.com/Rhickwel" target="_blank">Facebook Link</a>
+        </div>
+    </body>
+</html>
